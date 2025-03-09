@@ -26,7 +26,6 @@ class TestBrightestFinder(unittest.TestCase):
     def test_empty_list(self):
         colors = []
         brightest = BrightestColorFinder.find_brightest(colors)
-        self.assertIsNone(brightest)  # Sollte None zurückgeben
-
+        self.assertIsNone(brightest)  
 if __name__ == "__main__":
     unittest.main()

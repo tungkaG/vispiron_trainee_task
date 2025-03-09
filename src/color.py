@@ -2,7 +2,7 @@ import math
 import re
 
 class Color:
-    HEX_BASE = 16  # Basis für die Umwandlung von Hex in Dezimal
+    HEX_BASE = 16 
 
     def __init__(self, hex_value):
         self._validate_hex(hex_value)
@@ -22,7 +22,7 @@ class Color:
         )
 
     def _calculate_brightness(self):
-        r2, g2, b2 = self.r**2, self.g**2, self.b**2  # Vermeidung doppelter Berechnungen
+        r2, g2, b2 = self.r**2, self.g**2, self.b**2  
         return math.sqrt(0.241 * r2 + 0.691 * g2 + 0.068 * b2)
 
     def get_brightness(self):
